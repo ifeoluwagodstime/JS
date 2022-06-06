@@ -1,0 +1,42 @@
+* {
+    margin: 0pt;
+    padding: 0pt;
+    user-select: none;
+}
+
+.ju {
+    padding: 1vh;
+    padding-left: 10vh;
+}
+
+.fet {
+    padding-left: 10vh;
+    text-decoration: none;
+}
+
+.jet {
+    text-decoration: none;
+}
+
+.jik {
+    border-radius: 50vh;
+    margin-left: 10vh;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 45vh;
+}
+
+.btn {
+    top: 100% !important;
+    left: 65vh !important;
+}
+.pit{
+    text-shadow: 5vh;
+}
+
+.vtn {
+    top: 100% !important;
+    left: 94vh !important;
+}

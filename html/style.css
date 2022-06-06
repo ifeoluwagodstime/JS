@@ -1,0 +1,126 @@
+* {
+    background: rgb(1, 202, 1);
+}
+
+
+body{
+    overflow-y: hidden;
+}
+input {
+    border: 1px white solid;
+    background-color: #f7f3f3;
+    padding: 5px 5px 2px 5px;
+    width: 200pt;
+}
+
+section {
+    border: 1pt white solid;
+    background-color: white;
+    display: inline-block;
+    margin-top: 100pt;
+    width: 300pt;
+    height: 200pt;
+    padding-bottom: 50pt;
+    padding-top: 50pt;
+}
+section:hover{
+        box-shadow: 1px 1px 5px 5px;
+}
+
+.div {
+    margin-top: 20px;
+}
+
+.tip {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-left: 7pt;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pit {
+    background: #1c851c;
+    padding-left: 7pt;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 210pt;
+}
+
+a {
+    color: rgb(89, 146, 3);
+    background: white;
+    text-decoration: none;
+    margin-bottom: 70pt;
+}
+
+.land {
+    height: 200;
+    background: white;
+}
+
+.fin {
+    height: 200px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: none;
+    background: white;
+    color: lime;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+.pint {
+    position: absolute;
+    top: -100vh;
+    left: 40%;
+    padding-bottom: 100pt;
+    transition: top 1s ease;
+}
+.pint2{
+    position: absolute;
+    bottom: -100vh;
+    left: 40%;
+    padding-bottom: 100pt;
+    transition: bottom 1s ease;
+}
+
+.pit:hover {
+    background: greenyellow;
+}
+
+.pit {
+    cursor: pointer;
+}
+
+.tip:hover {
+    background: #e6d2d2;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.fint {
+    background: white;
+}
+
+#register {
+    cursor: pointer;
+}
+#login{
+    cursor: pointer;
+}

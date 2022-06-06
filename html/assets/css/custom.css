@@ -1,0 +1,26 @@
+.body-bg{
+    background-color: #000;
+    color: #fff;
+}
+.radius{
+    border-radius: 15px;
+}
+.bg-myRed{
+    background: #6e1313;
+}
+.redRadius{
+    border-radius: 15px 0 0 15px;
+}
+.my-margin-0{
+    margin-top: 0;
+}
+sup{
+    color: #ff0000;
+    font-size: 13pt;
+}
+.text-left{
+    text-align: left;
+}
+.class:hover{
+    text-decoration: underline;
+}
