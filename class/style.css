@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bt {
+    border: #049c9d 1px solid;
+    height: 20rem;
+    background: #049c9d;
+}
+
+.ht {
+    margin-left: -5rem;
+    margin-top: -1rem;
+}
+
+.bh {
+    margin-top: -3rem;
+}
+
+.b {
+    background: #049c9d;
+}
+
+.c {
+    margin-top: -6rem;
+}
+
+.form {
+    border: none;
+}
+
+.border-r {
+    border-radius: 5%;
+}
+
+.jujustu {
+    font-weight: bolder;
+}
+.card-text{
+    font-weight: bolder;
+}
+.jik{
+    font-weight: normal;
+    padding-left: 7rem;
+    color: #049c9d;
+    font-weight: bolder;
+}
+.shadow{
+    background-color: #f1f4f4;
+    border: none;
+}

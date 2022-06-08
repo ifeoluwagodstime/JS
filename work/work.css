@@ -1,0 +1,14 @@
+*{
+    margin: 0pt;
+    padding: 0pt;
+}
+.buga{
+    font-weight: bolder;
+    border-radius: 1rem;
+}
+.container{
+    margin: 5rem;
+}
+.shadow{
+    box-shadow:1pt 1pt 2pt 1pt #808080 !important;
+}
