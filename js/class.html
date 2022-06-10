@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../html/assets/font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        :root {
+            --bs-border-radius: 7px;
+            --bs-border-background: red;
+            --bs-border-back: white;
+            --bs-border: 1px black solid;
+            --padding: 2vh;
+        }
+
+        button {
+            padding: var(--padding);
+            border-radius: var(--bs-border-radius);
+            background-color: var(--bs-border-background);
+            color: var(--bs-border-back);
+            border: var(--bs-border);
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick="getURL();">Get Page URL</button>
+    <button type="button" onclick="loadHomePage1();">Load Home Page</button>
+    <button type="button" onclick="loadHomePage2();">Load Home Page 1</button>
+    <button type="button" onclick="loadHomePage();">Load Home Page</button>
+    <button type="button" onclick="forceReload();">
+        <i class="fa fa-refresh" aria-hidden="true"></i> Reload Page</button>
+    <button type="button" onclick="getViews()">Get Views Count</button>
+    <button type="button" onclick="goBack();">
+        <i class="fa fa-backward" aria-hidden="true"></i> Go Back</button>
+    <button type="button" onclick="goForward();">
+        <i class="fa fa-forward" aria-hidden="true"></i> Go Forward</button>
+    <button type="button" onclick="checkCookieEnabled();">Check If Cookies are Enabled</button>
+    <button type="button" onclick="checkLanguage();">Check Language</button>
+    <script>
+        function getURL() {
+            alert("The URL of this page is: " + window.location.href);
+        }
+        function loadHomePage1() {
+            window.location.assign("../html/main.html");
+        }
+        function loadHomePage2() {
+            window.location.replace("../html/main.html");
+        }
+        function loadHomePage() {
+            window.location.href = "../html/main.html";
+        }
+        function forceReload() {
+            window.location.reload(true)
+        }
+        function getViews() {
+            alert("You've accessed " + history.length + " web pages in this session.");
+        }
+        function goBack() {
+            window.history.go();
+        }
+        function goForward() {
+            window.history.forward();
+        }
+        function checkCookieEnabled() {
+            if (navigator.cookieEnabled) {
+                alert("Cookies are enabled in your browser.");
+            } else {
+                alert("Cookies are disabled in your browser.");
+            }
+        }
+        function checkLanguage() {
+            alert("Your browser's UI language is: " + navigator.language);
+        }
+        // var result = confirm("Are you sure?");
+
+        // if (result) {
+        //     document.write("You clicked OK button!");
+        // } else {
+        //     document.write("You clicked Cancel button!");
+        // }
+
+        var name = prompt("What's your name?");
+
+        if (name.length > 0 && name != "null") {
+            document.write("Hi, " + name);
+        } else {
+            document.write("your stupid, so you don't have a name, Nonsense!");
+        }
+    </script>
+</body>
+
+</html>

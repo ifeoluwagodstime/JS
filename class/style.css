@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-user-select: none;
 }
 
 .bt {
@@ -49,4 +50,13 @@
 .shadow{
     background-color: #f1f4f4;
     border: none;
+}
+.mt-0{
+    margin-top: -2rem !important;
+}
+.ji:hover{
+    margin-left: -2rem;
+    transition: 1ms ease-in-out;
+    color: #00ffff;
+    font-size: 2rem;
 }

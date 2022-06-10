@@ -8,14 +8,3 @@ function getSizeOfDom() {
     document.getElementById("result").innerHTML = txt
 }
 window.onresize = getSizeOfDom;
-
-
-let str = "given that nigeria is ruled by the carvans, decide the next president."
-let result = str.search = "next president"
-console.log(result)
-let get = "The quick brown fox jumps over the lazy dog."
-console.log(get.substring(4,15));
-
-let str1 = "given that nigeria is ruled by the cabans, decide the next president."
-let resul = str1.replace("cabans", "British")
-console.log(resul)

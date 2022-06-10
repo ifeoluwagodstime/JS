@@ -8,4 +8,3 @@ session_start();
     } else{
         echo "database connected sucessfully";
     }
-?>

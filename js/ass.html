@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../html/assets/css/bootstrap.css">
+    <style>
+        :root {
+            --bs-border-radius: 7px;
+            --bs-border-background: red;
+            --bs-border-back: white;
+            --bs-border: 1px black solid;
+            --padding: 2vh;
+        }
+
+        button {
+            padding: var(--padding);
+            border-radius: var(--bs-border-radius);
+            background-color: var(--bs-border-background);
+            color: var(--bs-border-back);
+            color: aqua firebrick;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var name = prompt("What's your name?");
+
+        if (name.length > 0 && name != "null") {
+            document.write("Hi, " + name);
+        } else {
+            document.write("your stupid, so you don't have a name, Nonsense!");
+        }
+    </script> <br>
+    <button type="button" onclick="console.log('You have clicked a button!');">Click Me</button><br><br>
+    <button type="button" oncontextmenu="console.log('You have right-clicked a button!');">Right Click on Me</button><br><br>
+    <button type="button" onmouseover="console.log('You have placed mouse pointer over a button!');">Place Mouse Over
+        Me</button><br><br>
+    <button type="button" onmouseout="console.log('You have moved out of the button!');">Place Mouse Inside Me and Move
+        Out</button><br><br>
+    <input type="text" onkeydown="console.log('You have pressed a key inside text input!')">
+    <textarea onkeydown="console.log('You have pressed a key inside textarea!')"></textarea><br><br>
+    <input type="text" onkeyup="console.log('You have released a key inside text input!')">
+    <textarea onkeyup="console.log('You have released a key inside textarea!')"></textarea><br><br>
+    <input type="text" onkeypress="console.log('You have pressed a key inside text input!')">
+    <textarea onkeypress="console.log('You have pressed a key inside textarea!')"></textarea><br><br>
+    <input type="text" onblur="console.log('Text input loses focus!')">
+    <button type="button">Submit</button><br><br>
+    <select onchange="console.log('You have changed the selection!');">
+        <option>Select</option>
+        <option>Male</option>
+        <option>Female</option>
+    </select><br><br>
+    <form action="../html/main.html" method="" onsubmit="console.log('Form data will be submitted to the server!');">
+        <label>First Name:</label>
+        <input type="text" name="first-name" required>
+        <button type="submit" value="Submit">Submit</button>
+    </form><br><br>
+    <script>
+        function highlightInput(elm) {
+            elm.style.background = "black";
+            elm.style.color = "firebrick"
+        }
+    </script>
+    <input type="text" onfocus="highlightInput(this)">
+    <button type="button">Button</button>
+
+</body>
+
+</html>
